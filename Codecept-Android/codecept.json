@@ -1,0 +1,23 @@
+{
+  "tests": "./tests/*_test.js",
+  "timeout": 25000,
+  "output": "./output",
+  "helpers": {
+    "Appium": {
+  	  "device": "Android",
+        "app": "com.comcast.crushlovely.comcastch.external",
+        "platform": "Android",
+        "desiredCapabilities": {
+        "deviceReadyTimeout": 10,
+        "appPackage": "com.comcast.crushlovely.external",
+        "appActivity": "com.comcast.crushlovely.comcastch.ui.activities.LoginActivity"
+      }
+    }
+  },
+  "include": {
+    "I": "./steps/steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "Codecept"
+}
