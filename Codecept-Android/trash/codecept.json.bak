@@ -1,0 +1,42 @@
+	{
+	  "tests": "./cch_*",
+	  "timeout": 10000,
+	  "output": "./output",
+	  "helpers": {
+        "REST": {},
+        "WebDriverIO" : {
+           "url": "about:blank",
+           "browser": "chrome",
+           "manualStart": false,
+           "restart": true,
+           "windowSize": "maximize",
+           "timeouts": {
+             "script": 60000,
+             "page load": 10000,
+             "implicit" : 5000
+           }
+},
+	    "Appium": {
+		"platform":"Android",
+	     	"host": "ondemand.saucelabs.com",
+		"port":"80",
+		"user":"CesarGuajardo",
+		"key":"6573b75f-ac5e-4ce8-b906-8ad0c9269256",
+			"desiredCapabilities":{
+			"appiumVersion":"1.7.2",
+			"deviceName":"Samsung Galaxy S4 Emulator",
+			"deviceOrientation":"portrait",
+			"browserName":"Browser",
+			"platformVersion":"4.4",
+			"plaformName":"Android"
+			}
+	   }
+	},
+	  "include": {
+	    "I": "./steps_file.js"
+	  },
+	  "bootstrap": false,
+	  "mocha": {},
+	  "name": "codecept-demo-mobile"
+	}
+
