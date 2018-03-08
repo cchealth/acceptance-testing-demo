@@ -1,5 +1,5 @@
 	{
-	  "tests": "./cch_*",
+	  "tests": "./tests/*",
 	  "timeout": 10000,
 	  "output": "./output",
 	  "helpers": {
@@ -7,8 +7,8 @@
 		"platform":"Android",
 			"desiredCapabilities":{
 			"appiumVersion":"1.7.2",
-			"appPackage":"com.comcast.crushlovely.comcastch.ui",
-			"appActivity":".LoginActivity",
+			"appPackage":"com.comcast.crushlovely.comcastch.external",
+			"appActivity":"com.comcast.crushlovely.comcastch.ui.activities.LoginActivity",
 			"deviceName":"Nexux_5_API_27",
 			"deviceOrientation":"portrait",
 			"platformVersion":"8.1.0",
