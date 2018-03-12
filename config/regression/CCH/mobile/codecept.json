@@ -1,5 +1,5 @@
 	{
-	  "tests": "./cch_*",
+	  "tests": "../../../../tests/regression/CCH/mobile/cch_*",
 	  "timeout": 10000,
 	  "output": "./output",
 	  "helpers": {
@@ -17,7 +17,7 @@
 	   }
 	},
 	  "include": {
-	    "I": "./steps_file.js"
+	    "I": "../../../../config/regression/CCH/mobile./steps_file.js"
 	  },
 	  "bootstrap": false,
 	  "mocha": {},
