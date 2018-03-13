@@ -16,7 +16,7 @@ Scenario('Failed login', (I) => {
 	I.wait(5);
 });
 
-Scenario('Succesful Login', (I) => {
+Scenario('Successful Login', (I) => {
 	I.waitForElement("//android.view.View[@content-desc='Log In']", 40);
 	I.tap("//android.view.View[@content-desc='Log In']");
 	I.wait(5);
