@@ -1,0 +1,26 @@
+	{
+	  "tests": "../../../../tests/regression/CCH/mobile/cch_*",
+	  "timeout": 10000,
+	  "output": "./output",
+	  "helpers": {
+	    "Appium": {
+		"platform":"Android",
+			"desiredCapabilities":{
+			"appiumVersion":"1.7.2",
+			"appPackage":"com.comcast.crushlovely.comcastch.ui",
+			"appActivity":".LoginActivity",
+			"deviceName":"Nexux_5_API_27",
+			"deviceOrientation":"portrait",
+			"platformVersion":"8.1.0",
+			"plaformName":"Android"
+			}
+	   }
+	},
+	  "include": {
+	    "I": "../../../../config/regression/CCH/mobile./steps_file.js"
+	  },
+	  "bootstrap": false,
+	  "mocha": {},
+	  "name": "codecept-demo-mobile"
+	}
+
