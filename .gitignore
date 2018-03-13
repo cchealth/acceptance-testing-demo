@@ -1,0 +1,27 @@
+# GENERAL
+node_modules
+jspm_packages
+*.log
+logs
+*.tgz
+.env
+.npm
+
+
+# PACKAGE FILES
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# APP FILES
+*.apk
+*.ap_
+
+# GRADLE
+.gradle/
+
+# PROPERTIES
+local.properties
