@@ -1,0 +1,28 @@
+{
+  "tests": "./tests/*_test.js",
+  "timeout": 25000,
+  "output": "./output",
+  "helpers": {
+    "Appium": {
+      "platform":"Android",
+      "desiredCapabilities":
+      {
+        "appiumVersion":"1.7.2",
+        "app": "com.comcast.crushlovely.comcastch.external",
+        "appActivity": "com.comcast.crushlovely.comcastch.ui.activities.LoginActivity",
+        "appWaitActivity": "com.comcast.crushlovely.comcastch.ui.activities.LoginActivity",
+        "deviceName":"Nexus_6P_API_27",
+        "deviceOrientation":"portrait",
+        "platformVersion":"8.1.0",
+        "plaformName":"Android",
+	"autoGrantPermissions": true
+      }
+    }
+  },
+  "include": {
+    "I": "./steps/steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "Codecept"
+}

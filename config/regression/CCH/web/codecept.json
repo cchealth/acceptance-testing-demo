@@ -1,0 +1,30 @@
+{
+  "output": "../../../../output",
+  "helpers": {
+    "WebDriverIO": {
+      "smartWait": 5000,
+      "timeouts": {
+        "script": 60000,
+        "page load": 10000
+      },
+      "url": "https://demo-web.frontend.cch.healthcare/login",
+      "browser": "chrome",
+      "restart": true
+    }
+  },
+  "include": {
+    "loginPage": "../../../../tests/regression/CCH/web/pages/login.js",
+    "surveyPage": "../../../../tests/regression/CCH/web/pages/surveyPage.js"
+  },
+  "mocha": {
+    "reporterOptions": {
+      "reportDir": "output"
+    }
+  },
+  "bootstrap": null,
+  "teardown": null,
+  "hooks": [],
+  "tests": "../../../../tests/regression/CCH/web/*_test.js",
+  "timeout": 100000,
+  "name": "codeceptjs"
+}
